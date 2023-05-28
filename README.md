@@ -32,7 +32,7 @@ npm install
 npm run dev
 9.Lancez le serveur de développement :
 php artisan serve
-L'application est maintenant accessible à l'adresse http://localhost:8000.
+
 
 
 ##Base de données:

@@ -12,7 +12,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 
 ## Installation
 
-1. Clonez ce dépôt dans le répertoire de votre choix :
+1. Clonez la branche master dans le répertoire de votre choix :
 
    ```shell
    git clone https://github.com/votre-utilisateur/CoffeeShop.git

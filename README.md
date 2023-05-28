@@ -15,7 +15,8 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur 
 1. Clonez la branche master dans le répertoire de votre choix :
 
    ```shell
-   git clone https://github.com/votre-utilisateur/CoffeeShop.git
+   git clone https://github.com/fatima-ezzahra-saf/Coffee_Shop.git .
+   
 2.Accédez au répertoire du projet :
 cd CoffeeShop
 3.Installez les dépendances du projet en exécutant la commande suivante :

@@ -7,59 +7,26 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+Coffee_Shop
+CoffeeShop est une application web développée avec le framework Laravel. Il s'agit d'un système de gestion pour un café qui permet de gérer les produits, les commandes et les utilisateurs.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Prérequis
+Avant de commencer, assurez-vous d'avoir les éléments suivants installés sur votre système :
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+PHP (version 8.0.28)
+Composer (version 2.5.5)
+MySQL
+Installation
+Clonez ce dépôt dans le répertoire de votre choix :
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+git clone https://github.com/votre-utilisateur/CoffeeShop.git
+2.Accédez au répertoire du projet : cd CoffeeShop 3.Installez les dépendances du projet en exécutant la commande suivante : composer install 4.Créez un fichier .env à partir du fichier .env.example et configurez les paramètres de votre base de données : cp .env.example .env 5.Assurez-vous de configurer les informations de connexion à votre base de données (DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, DB_PASSWORD). 6.Générez une clé d'application unique en exécutant la commande suivante : php artisan key:generate 7.Exécutez les migrations de la base de données et générez des données de démonstration (facultatif) : php artisan migrate --seed 8.Compilez les ressources front-end : npm install npm run dev 9.Lancez le serveur de développement : php artisan serve
 
-## Learning Laravel
+##Base de données: Le schéma de base de données de CoffeeShop comprend les tables suivantes :
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+users : Stocke les informations des utilisateurs enregistrés. products : Contient les détails des produits disponibles dans le café. orders : Enregistre les commandes passées par les clients. feedback :Enregistre les messages de tous les utilisateurs qui sont emis au administrateur. panier:Contient les produits qu'un utilisateur à commander. commande:Contient les produits qu'un utilisateur à acheter. commentaires:Enregistre tous les commentaires qui sont ajouter à la page d'acceuil. reply:contient les reponces sur chaque commantaires. categories:Contient les categories dont chaque produit appartient. notifications:c'est pour les emails qui vont etre envoyer en utilisant send mail.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Consultez le dossier database/migrations pour plus de détails sur les colonnes et les relations de chaque table.
 
 ## License
 
